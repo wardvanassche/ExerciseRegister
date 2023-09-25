@@ -13,4 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/exercises', 'App\Http\Controllers\ExercisesController@index');
+Route::get('/', 'App\Http\Controllers\ExercisesController@index');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
