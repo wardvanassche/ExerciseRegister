@@ -10,4 +10,9 @@ class ExercisesController extends Controller
     {
         return view('exercises');
     }
+
+    public function create()
+    {
+        return view('create');
+    }
 }

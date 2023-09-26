@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/exercises', 'App\Http\Controllers\ExercisesController@index');
+
+Route::get('/exercises/create', 'App\Http\Controllers\ExercisesController@create')->middleware('registered.user');
