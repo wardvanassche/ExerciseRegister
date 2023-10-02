@@ -30,6 +30,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        <a class="nav-link" href="{{ url('/exercises') }}">Exercises</a>
                         <a class="nav-link" href="{{ url('/exercises/create') }}">Create</a>
                     </ul>
 
